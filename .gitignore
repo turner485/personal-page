@@ -11,6 +11,7 @@ yarn-error.log
 *.njsproj
 *.sln
 
+webpack.config.js
 dist/
 src/
 index.html
