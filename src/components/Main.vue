@@ -22,7 +22,7 @@ export default {
                 txt: 'want to know more?'
             }
             ]
-        }
+        } 
     },
     methods: {
         sweetAlert() {
