@@ -1,0 +1,178 @@
+	body {
+	background: #000;
+	color: #00FF00;
+	font-family: Consolas, monaco, monospace;
+	letter-spacing: 0.06em;
+	}
+
+	#main-content {
+		position: absolute;
+		transform: translate(-50%);
+		top: 45%;
+		left: 50%;
+
+		h1 {
+			text-transform: uppercase;
+			font-family: inherit;
+			letter-spacing: .09em;
+			font-weight: lighter;
+			font-size: 72px;
+			margin: 0 0 15px;
+
+		}
+
+		.button-wrap {
+			text-align: center;
+
+			button {
+				font-family: inherit;
+				margin: auto;
+				padding: 1rem;
+				text-transform: uppercase;
+				color: #00FF00;
+				background: #000;
+				border: 1px solid #00FF00 !important;
+				border-radius: 3px;
+				letter-spacing: 0.11em;
+				word-spacing: 0.02em;
+				font-size: .85rem;
+				position: relative;
+				top: 0;
+				right: 0;
+				padding-left: 2.5rem;
+
+
+				&:first-child {
+					margin-right: 10px;
+				}
+
+
+				&:after,
+				&:before {
+					position: absolute;
+					font-weight: bold;
+					font-size: 1rem;
+				}
+
+				@keyframes blinker {
+					50% {
+						opacity: 0;
+					}
+				}
+
+				&:before {
+					content: '_';
+					position: absolute;
+					left: 1.5rem;
+					top: .9rem;
+					animation: blinker 1s normal infinite;
+				}
+
+				&:after {
+					content: '>';
+					position: absolute;
+					left: .8rem;
+					top: 1rem;
+				}
+			}
+		}
+	}
+
+	.swal2-popup {
+		background: #000;
+		border: solid 1px #00FF00;
+		border-radius: 0%;
+
+		.swal2-styled:focus {
+				box-shadow: none!important;
+		}
+
+		.swal2-close {
+			display: none !important;
+		}
+
+		#swal2-content {
+			text-align: center;
+			letter-spacing: 0.03em;
+			/* word-spacing: 0.0em; */
+			font-size: 13px;
+		}
+
+		.swal2-content,
+		.swal2-title {
+			color: #00FF00 !important;
+
+			i {
+				font-size: 58px;
+			}
+
+			span {
+				display: block;
+				margin-bottom: 0px;
+				font-size: 40px;
+				text-transform: uppercase;
+				letter-spacing: 0.04em;
+				font-weight: 600;
+			}
+
+			a {
+				font-size: 28px;
+				letter-spacing: inherit;
+				color: #00FF00 !important;
+				text-decoration: none;
+				letter-spacing: 0.04em;
+			}
+		}
+
+		.swal2-confirm {
+			font-family: inherit;
+			margin: auto;
+			padding: 1rem;
+			color: #00FF00 !important;
+			background-color: #000 !important;
+			border: 1px solid #00FF00 !important;
+			border-radius: 3px;
+			letter-spacing: 0.11em;
+			word-spacing: 0.02em;
+			font-size: .85rem;
+			position: relative;
+			top: 0;
+			right: 0;
+			padding-left: 2.5rem;
+
+			
+
+			&:first-child {
+				margin-right: 10px;
+			}
+
+			&:after,
+			&:before {
+				position: absolute;
+				font-weight: bold;
+				font-size: 1rem;
+			}
+
+			@keyframes blinker {
+				50% {
+				opacity: 0;
+				}
+			}
+
+			&:before {
+				content: '_';
+				position: absolute;
+				left: 1.5rem;
+				top: .9rem;
+				animation: blinker 1s normal infinite;
+			}
+
+			&:after {
+				content: '>';
+				position: absolute;
+				left: .8rem;
+				top: 1rem;
+			}
+		}
+	}
+	
